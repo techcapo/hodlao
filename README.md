@@ -8,11 +8,48 @@ HODLAO is a 8/13 multisig holding HODL
 
 ## Shroomtoshi's gift
 
-Shroomtoshi graciously left some gifts behind before going full Satoshi. He asked his custodians (dazza9, Kenny, richwake) to deliver Shrooms #85 (Number Go Up) and #86 (HODL) to 25 people he named. He proposed distributing the gifts in 10/15 multisig wallets. NGU never touched the multisig, the group asked the custodians to list the shroom for sale and distribute the proceeds between members. NGU sold for 1.6 BTC on 30 May 2024. 
+Shroomtoshi graciously left some gifts behind before going full Satoshi. He asked his custodians (dazza9, Kenny, richwake) to deliver Shrooms #85 (Number Go Up) and #86 (HODL) to 25 people he named. He proposed distributing the gifts in multisig wallets. NGU never touched the multisig, the group asked the custodians to list the shroom for sale and distribute the proceeds between members. NGU sold for 1.6 BTC on 30 May 2024. 
 
-The 13 members of the HODL group voted to honor Shroomtoshi's wish and set up the multisig. 
+The 13 original members of the HODL group voted to honor Shroomtoshi's wish and set up the multisig. 
 
-## Why 8/13?
+## Current Holders
+
+- vinimok
+- techcapo
+- Simo
+- pain
+- ticklesnarf
+- HAALAND
+- EO
+- DEADPOLAROID
+- c0ffeeplease
+- Beni
+- Bard
+- ModifyGalaxy
+- OYOGZ
+
+## Buyouts
+
+Each member holds a claim on an equal share of 1/13th of the HODL artifact.
+
+### Can I be part of HODLAO?
+
+Yes! Every HODLAO member has a price point for selling their share of the multisig, you just have to find the lowest one and initiate a buyout.
+
+### How to perform a buyout?
+
+1. The seller and the buyer agrees on a sale price
+1. The buyer transfers the sale price +2% transaction fee to the HODLAO multisig. The fee covers on-chain fees + compensates HODLAO members for the following work
+1. The buyer shares their public key with HODLAO (master fingerprint, derivation, xpub)
+1. HODLAO sets up a new multisig, replacing the seller's slot with the buyer's
+1. HODLAO transfers HODL (and other holdings) to the new multisig
+1. HODLAO transfers the sale price to the seller
+
+## Technical details
+
+Here are some considerations we have discussed in detail (12 angry men style) while setting up HODLAO.
+
+### Why 8/13?
 
 Partly it's a trade-off between risk of loss vs risk of theft. The higher the threshold, the easier it is to lose access to the shroom. In a 11/13 multisig three people lose their keys and it's game over. With lower thresholds it's easier for an attacker to steal the shroom. In a 4/13 multisig, an attacker only needs to hack 4 members. 
 
@@ -20,4 +57,10 @@ The main consideration, though, is how many people need to agree to make decisio
 
 ### Collusion
 
-The kind of majority decision that would make minority holders very unhappy, is if a majority of holders collude against the others to lock them out. In a 3/13 multisig it would only take three people to go behind the other's back and send the shroom out to their own 3/3. That's an easy 4x. With an 8/13 multisig, though, you need secret coordination between 8 members which sounds pretty hard. Also the upside is lower because.
+The kind of majority decision that would make minority holders very unhappy, is if a majority of holders collude against the others to lock them out. In a 3/13 multisig it would only take three people to go behind the other's back and send the shroom out to their own 3/3. That's an easy 4x. With an 8/13 multisig, though, you need secret coordination between 8 members which sounds pretty hard. Also the upside is lower because there are more attackers and fewer victims.
+
+### Sybil Protection
+
+Collusion can be pulled off easier if there are sybil signers on the multisig (ie. one person controls multiple signers). To make sure this doesn't happen, HODLAO only accepts members with estabilished identities in the Ordinals ecosystem.
+
+
