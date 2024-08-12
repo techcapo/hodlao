@@ -45,7 +45,7 @@ Yes! Every HODLAO member has a price point for selling their share of the multis
 1. HODLAO transfers HODL (and other holdings) to the new multisig
 1. HODLAO transfers the sale price to the seller
 
-## Technical details
+## Technical Considerations
 
 Here are some considerations we have discussed in detail (12 angry men style) while setting up HODLAO.
 
