@@ -45,6 +45,10 @@ Yes! Every HODLAO member has a price point for selling their share of the multis
 1. HODLAO transfers HODL (and other holdings) to the new multisig
 1. HODLAO transfers the sale price to the seller
 
+## Liquidation
+
+In case a simple majority of the HODLAO members (7 of 13) decide to list the shroom for sale, HODLAO will transfer HODL to a trusted third party (Kenny has graciously agreed to help HODLAO with this) who will list the shroom for sale and will split the proceeds equally between the 13 holders.
+
 ## Technical Considerations
 
 Here are some considerations we have discussed in detail (12 angry men style) while setting up HODLAO.
